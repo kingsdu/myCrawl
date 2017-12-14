@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="profiler.settings.instrument.empty.methods">true</entry>
+<entry key="ProfilerCPUSettings_profile_runnables">true</entry>
+<entry key="ProfilerCPUSettings_filter_type">2</entry>
+<entry key="ProfilerMemorySettings_track_every">10</entry>
+<entry key="ProfilerMemorySettings_mode">4</entry>
+<entry key="ProfilerCPUSettings_root_classes">com.myCrawl.UDPTCP.**
+com.myCrawl.WebCollector.**
+com.myCrawl.datamodal.**
+com.myCrawl.eight.**
+com.myCrawl.elven.SimHash.**
+com.myCrawl.elven.Synonym.**
+com.myCrawl.elven.compress.**
+com.myCrawl.elven.similarity.**
+com.myCrawl.four.**
+com.myCrawl.io.**
+com.myCrawl.myFrontier.**
+com.myCrawl.one.**
+com.myCrawl.recovergz.**
+com.myCrawl.seven.**
+com.myCrawl.three.**
+com.myCrawl.utils.**
+com.mySearch.BloomFilter.**
+com.mySearch.Incremental.**
+</entry>
+<entry key="ProfilerCPUSettings_filter_value">com.myCrawl.UDPTCP.*,
+com.myCrawl.WebCollector.*,
+com.myCrawl.datamodal.*,
+com.myCrawl.eight.*,
+com.myCrawl.elven.SimHash.*,
+com.myCrawl.elven.Synonym.*,
+com.myCrawl.elven.compress.*,
+com.myCrawl.elven.similarity.*,
+com.myCrawl.four.*,
+com.myCrawl.io.*,
+com.myCrawl.myFrontier.*,
+com.myCrawl.one.*,
+com.myCrawl.recovergz.*,
+com.myCrawl.seven.*,
+com.myCrawl.three.*,
+com.myCrawl.utils.*,
+com.mySearch.BloomFilter.*,
+com.mySearch.Incremental.*</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">true</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="ProfilerMemorySettings_stacktraces">-1</entry>
+</properties>
