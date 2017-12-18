@@ -1,0 +1,4 @@
+n n
+n a
+a a
+a n 

@@ -25,7 +25,10 @@ public class Candidate {
 	
 	public Collection<String> getSubstrings() {
 		String substring;
-		String[] words = string.split(" ");
+//		String[] words = string.split(" ");//词的长度（中文应该为分词的词串）
+		String regex = "\\s+";
+		String[] words = string.split(regex);//ITCLAS分词
+		//分词，得到子串的数据
 		ArrayList<String> substrings = new ArrayList<String>();
 		
 		for (ArrayList<Integer> idxs : substrIdxs(words.length)) {
@@ -38,11 +41,18 @@ public class Candidate {
 		return substrings;		
 	}
 	
+	
+	/**
+	 * @Description: C-value计算
+	 * @param:
+	 * @return:
+	 * @date: 2017-12-15  
+	 */
 	public double getCValue() {
 		double log_2_lenD = (Math.log((double)len)/Math.log((double)2));
 		double freqD = (double) freq;
-		double invUniqNestersD = 1D / (double) uniqNesters;
-		double freqNestedD = (double) freqNested;
+		double invUniqNestersD = 1D / (double) uniqNesters;//含有基串的嵌套串的个数
+		double freqNestedD = (double) freqNested;//基串的频数
 		
 		if (uniqNesters == 0) {
 			return log_2_lenD * freqD;
